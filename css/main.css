@@ -27,12 +27,26 @@ a:hover {
 
 .header {
     background-color: #21211e;
+    position: relative;
 }
 
 .header h1 {
     color: #ffffff;
     font-size: 24px;
     margin: 20px 10px;
+}
+
+.header .user_box {
+    position: absolute;
+    top: 30px;
+    right: 4%;
+    color: #999999;
+}
+
+.header .user_box a,
+.header .user_box a:link,
+.header .user_box a:visited {
+    color: #ffffff;
 }
 
 .tab_bar {
@@ -121,7 +135,7 @@ a:hover {
 }
 
 ul.menu li {
-    padding: 6px 0 6px 8px;
+    padding: 8px 0 8px 8px;
     border-bottom: 1px solid #cecece;
 }
 
@@ -138,12 +152,12 @@ table {
 }
 
 table tr th {
-    background-color: #e3e3e3;
+    background-color: #DBDBDB;
     font-weight: bold;
 }
 
 table tr td {
-    border-bottom: 1px solid #cecece;
+    border-bottom: 1px solid #CECECE;
 }
 
 table tr th,
@@ -153,6 +167,9 @@ table tr td {
 
 table .left {text-align: left}
 table .right {text-align: right}
+
+table tr.alt td {background-color: #F6F6F6;}
+table tr.hover td {background-color: #E5F1F6;}
 
 /************************************************************
     FORMS

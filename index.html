@@ -18,6 +18,24 @@
 
     <script type="text/javascript">
         $(function() {
+            $('table tr').mouseover(function() {
+                $(this).addClass('hover')
+            });
+
+            $('table tr').mouseout(function() {
+                $(this).removeClass('hover')
+            });
+
+            $('table tr:nth-child(even)').addClass('alt');
+
+            $('.checkall').click(function() {
+                var checkedStatus = this.checked;
+
+                $('input[type=checkbox]').each(function() {
+                    this.checked = checkedStatus;
+                })
+            })
+
             $(".sortable .sort_items").sortable();
             $(".sortable .sort_items").disableSelection();
 
@@ -57,6 +75,9 @@
 <div class="header">
     <div class="container_12">
         <h1 class="grid_12">Control Panel</h1>
+        <div class="user_box">
+            Logged in as <a href="#">Administrator</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">Logout</a>
+        </div>
     </div>
     <div class="clear">&nbsp;</div>
 
@@ -103,6 +124,7 @@
         <table class="sortable">
             <thead>
                 <tr>
+                    <th width="10"><input class="checkall" type="checkbox" /></th>
                     <th>Header One</th>
                     <th>Header Two</th>
                     <th class="right">Header Right</th>
@@ -110,13 +132,33 @@
             </thead>
             <tbody class="sort_items">
                 <tr class="sort_item">
+                    <td><input type="checkbox" /></td>
                     <td><a href="#">Item A1</a></td>
                     <td>Item A2</td>
                     <td class="right">Item Right</td>
                 </tr>
                 <tr class="sort_item">
+                    <td><input type="checkbox" /></td>
                     <td><a href="#">Item B1</a></td>
                     <td>Item B2</td>
+                    <td class="right">Item Right</td>
+                </tr>
+                <tr class="sort_item">
+                    <td><input type="checkbox" /></td>
+                    <td><a href="#">Item C1</a></td>
+                    <td>Item C2</td>
+                    <td class="right">Item Right</td>
+                </tr>
+                <tr class="sort_item">
+                    <td><input type="checkbox" /></td>
+                    <td><a href="#">Item D1</a></td>
+                    <td>Item D2</td>
+                    <td class="right">Item Right</td>
+                </tr>
+                <tr class="sort_item">
+                    <td><input type="checkbox" /></td>
+                    <td><a href="#">Item E1</a></td>
+                    <td>Item E2</td>
                     <td class="right">Item Right</td>
                 </tr>
             </tbody>
