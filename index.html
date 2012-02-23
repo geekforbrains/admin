@@ -1,16 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
     <title>Control Panel</title>
 
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
     <link rel="stylesheet" type="text/css" href="css/grid.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <link rel="stylesheet" type="text/css" href="plugins/chosen/chosen.css" />
+	<link rel="stylesheet" type="text/css" href="plugins/smoothness/jquery-ui-1.8.17.custom.css" />
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+
+    <script type="text/javascript">
+        $(function() {
+            $(".sortable .sort_items").sortable();
+            $(".sortable .sort_items").disableSelection();
+
+            $(".modal").click(function() {
+                $( "#modal" ).dialog({
+                    height: 140,
+                    modal: true
+                })
+            });
+        });
+    </script>
 </head>
 <body>
+
+
+<div style="display: none" id="modal" title="Hello World">
+   <p>This is a modal</p> 
+</div>
 
 
 <!-- start header -->
@@ -60,7 +83,7 @@
             </form>
         </div>
 
-        <table>
+        <table class="sortable">
             <thead>
                 <tr>
                     <th>Header One</th>
@@ -68,13 +91,13 @@
                     <th class="right">Header Right</th>
                 </tr>
             </thead>
-            <tbody>
-                <tr>
+            <tbody class="sort_items">
+                <tr class="sort_item">
                     <td><a href="#">Item A1</a></td>
                     <td>Item A2</td>
                     <td class="right">Item Right</td>
                 </tr>
-                <tr>
+                <tr class="sort_item">
                     <td><a href="#">Item B1</a></td>
                     <td>Item B2</td>
                     <td class="right">Item Right</td>
@@ -83,7 +106,7 @@
         </table>
 
         <div class="buttons">
-            <a class="btn blue" href="#">Left Button</a>
+            <a class="btn blue modal" href="#">Show Modal</a>
         </div>
 
         <div class="buttons right">
