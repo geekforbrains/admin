@@ -205,7 +205,10 @@ form .radio .row {
     margin-bottom: 5px;
 }
 
-form .buttons {margin-top: 0}
+form .buttons {
+    margin-top: 0;
+    padding-top: 10px;
+}
 
 .btn,
 .btn:link,
