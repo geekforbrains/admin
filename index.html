@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Control Panel</title>
+    <link rel="stylesheet" type="text/css" href="reset.css" />
+    <link rel="stylesheet" type="text/css" href="grid.css" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+</head>
+<body>
+
+<!-- start header -->
+<div class="header">
+    <div class="container_12">
+        <h1 class="grid_12">Control Panel</h1>
+    </div>
+    <div class="clear">&nbsp;</div>
+
+    <div class="tab_bar">
+        <div class="container_12">
+            <div class="grid_12">
+                <ul class="tabs">
+                    <li class="active"><a href="#">First</a></li>
+                    <li><a href="#">Second</a></li>
+                    <li><a href="#">Third</a></li>
+                </ul>
+            </div>
+            <div class="clear">&nbsp;</div>
+        </div>
+    </div>
+
+    <div class="crumbs">
+        <div class="container_12">
+            <div class="grid_12">
+                <a href="#">First</a><span class="splitter">&rarr;</span>
+                <a href="#">Second</a><span class="splitter">&rarr;</span>
+                Third
+            </div>
+            <div class="clear">&nbsp;</div>
+        </div>
+    </div>
+</div>
+<!-- end header -->
+
+<!-- start content -->
+<div class="content container_12">
+    <div class="grid_12 spacer">
+        <h1>Table</h1>
+
+        <div class="topright">
+            <form>
+                Search: 
+                <input type="text" />
+                <input type="submit" value="Go" />
+            </form>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Header One</th>
+                    <th>Header Two</th>
+                    <th class="right">Header Right</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#">Item A1</a></td>
+                    <td>Item A2</td>
+                    <td class="right">Item Right</td>
+                </tr>
+                <tr>
+                    <td><a href="#">Item B1</a></td>
+                    <td>Item B2</td>
+                    <td class="right">Item Right</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="buttons">
+            <a class="btn blue" href="#">Left Button</a>
+        </div>
+
+        <div class="buttons right">
+            <a class="btn blue" href="#">Submit</a>
+            <a class="btn gray" href="#">Cancel</a>
+        </div>
+    </div>
+    <div class="clear">&nbsp;</div>
+
+    <div class="grid_3 spacer">
+        <h2>Menu</h2>
+        <ul class="menu">
+            <li><a href="#">Item One</a></li>
+            <li><a href="#">Item Two</a></li>
+            <li><a href="#">Item Three</a></li>
+            <li class="noborder"><a href="#">Item Four</a></li>
+        </ul>
+    </div>
+    <div class="grid_9 spacer">
+        <h1>Form</h1>
+        <form>
+            <ul>
+                <!-- mini form items -->
+                <li class="text mini">
+                    <label>Text Mini</label>
+                    <input type="text" />
+                    <input type="text" />
+                    <input type="text" />
+                </li>
+                <li class="select mini">
+                    <label>Select Mini</label>
+                    <select><option>-</option></select>
+                    <select><option>-</option></select>
+                    <select><option>-</option></select>
+                </li>
+
+                <!-- small form items -->
+                <li class="text">
+                    <label>Text Small <em>(Default)</em></label>
+                    <input type="text" />
+                </li>
+                <li class="select">
+                    <label>Select Small <em>(Default)</em></label>
+                    <select><option>-</option></select>
+                </li>
+                <li class="textarea small">
+                    <label>Textarea Small</label>
+                    <textarea></textarea>
+                </li>
+
+                <!-- medium form items -->
+                <li class="text medium">
+                    <label>Text Medium</label>
+                    <input type="text" />
+                </li>
+                <li class="select medium">
+                    <label>Select Medium</label>
+                    <select><option>-</option></select>
+                </li>
+                <li class="textarea medium">
+                    <label>Textarea Medium <em>(Default)</em></label>
+                    <textarea></textarea>
+                </li>
+
+                <!-- large form items -->
+                <li class="text large">
+                    <label>Text Large</label>
+                    <input type="text" />
+                </li>
+                <li class="select large">
+                    <label>Select Large</label>
+                    <select><option>-</option></select>
+                </li>
+                <li class="textarea large">
+                    <label>Textarea Large</label>
+                    <textarea></textarea>
+                </li>
+
+                <!-- full form items -->
+                <li class="text full">
+                    <label>Text Full</label>
+                    <input type="text" />
+                </li>
+                <li class="select full">
+                    <label>Select Full</label>
+                    <select><option>-</option></select>
+                </li>
+                <li class="textarea full">
+                    <label>Textarea Full</label>
+                    <textarea></textarea>
+                </li>
+                <li class="checkbox">
+                    <label>Checkboxes</label>
+                    <div class="row"><input type="checkbox" /> Checkbox One</div>
+                    <div class="row"><input type="checkbox" /> Checkbox Two</div>
+                    <div class="row"><input type="checkbox" /> Checkbox Three</div>
+                </li>
+                <li class="radio">
+                    <label>Radios</label>
+                    <div class="row"><input type="radio" /> Radio One</div>
+                    <div class="row"><input type="radio" /> Radio Two</div>
+                    <div class="row"><input type="radio" /> Radio Three</div>
+                </li>
+                <li class="buttons">
+                    <a class="btn blue">Submit</a>
+                    <a class="btn gray">Cancel</a>
+                </li>
+            </ul>
+        </form>
+    </div>
+    <div class="clear">&nbsp;</div>
+</div>
+<!-- end content -->
+
+<!-- start footer -->
+<div class="footer container_12">
+    <div class="grid_12">
+        Copyright &copy; <a href="#">Your Company</a><br />
+    </div>
+    <div class="clear">&nbsp;</div>
+</div>
+<!-- end footer -->
+
+</body>
+</html>
