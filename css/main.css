@@ -83,6 +83,10 @@ a:hover {
     GENERAL CONTENT
 ************************************************************/
 
+#modal {
+    display: none;
+}
+
 .content h1,
 .content h2 {
     font-weight: bold;

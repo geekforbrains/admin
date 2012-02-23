@@ -13,6 +13,8 @@
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="plugins/tiny_mce/jquery.tinymce.js"></script>
+    <script type="text/javascript" src="plugins/chosen/chosen.jquery.js"></script>
 
     <script type="text/javascript">
         $(function() {
@@ -25,13 +27,28 @@
                     modal: true
                 })
             });
+
+            $('textarea.tinymce').tinymce({
+                script_url : 'plugins/tiny_mce/tiny_mce.js',
+
+                theme : "advanced",
+                plugins: "inlinepopups",
+
+                theme_advanced_buttons1 : "formatselect,fontsizeselect,|,bold,italic,underline,|,justifyleft,justifycenter,justifyright,justifyfull,|,link,unlink,anchor,image,code",
+                theme_advanced_buttons2 : "",
+                theme_advanced_toolbar_location : "top",
+                theme_advanced_toolbar_align : "left",
+                theme_advanced_statusbar_location : "bottom",
+                theme_advanced_resizing : true
+            });
         });
     </script>
 </head>
 <body>
 
 
-<div style="display: none" id="modal" title="Hello World">
+<!-- jquey modal -->
+<div id="modal" title="Hello World">
    <p>This is a modal</p> 
 </div>
 
@@ -168,7 +185,7 @@
                 </li>
                 <li class="textarea medium">
                     <label>Textarea Medium <em>(Default)</em></label>
-                    <textarea></textarea>
+                    <textarea class="tinymce"></textarea>
                 </li>
 
                 <!-- large form items -->
@@ -232,7 +249,6 @@
 <!-- end footer -->
 
 
-<script type="text/javascript" src="plugins/chosen/chosen.jquery.js"></script>
 <script type="text/javascript"> 
     $(".chzn-select").chosen(); 
     $(".chzn-select-deselect").chosen({allow_single_deselect:true}); 
