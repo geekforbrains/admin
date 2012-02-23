@@ -86,8 +86,8 @@ a:hover {
 .content h1,
 .content h2 {
     font-weight: bold;
-    font-size: 18px;
-    padding-bottom: 5px;
+    font-size: 20px;
+    padding-bottom: 8px;
     border-bottom: 4px solid #000000;
 }
 
@@ -102,7 +102,7 @@ a:hover {
 
 .topright {
     position: absolute;
-    top: 0px;
+    top: -2px;
     right: 0px;
 }
 
@@ -170,12 +170,19 @@ form ul li {
 
 .text input, 
 .select select, 
-.textarea textarea {
+.textarea textarea,
+.topright input,
+.topright select {
     font-size: 12px;
     font-family: arial, sans-serif;
     padding: 5px;
     margin: 0;
     border: 1px solid #b3b3b3;
+}
+
+.topright input,
+.topright select {
+    width: 150px;
 }
 
 form .text input,
@@ -216,6 +223,11 @@ form .buttons {
     padding: 8px 12px;
     font-weight: bold;
     color: #ffffff;
+}
+
+.btn.mini {
+    padding: 6px 8px;
+    font-weight: normal;
 }
 
 .btn:hover {
