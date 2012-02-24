@@ -108,6 +108,16 @@
 <!-- end header -->
 
 
+<!-- start messages -->
+<div class="container_12">
+    <div class="grid_12 messages">
+        <p class="ok">This is an success message! Hooray!</p>
+        <p class="error">This is an error message. :(</p>
+    </div>
+</div>
+<!-- end messages -->
+
+
 <!-- start content -->
 <div class="content container_12">
     <div class="grid_12 spacer">
@@ -115,9 +125,15 @@
 
         <div class="topright">
             <form>
-                Search: 
-                <input type="text" />
-                <a class="btn mini blue" href="#">Go</a>
+                <ul>
+                    <li class="text">
+                        <label>Search:</label>
+                        <input type="text" />
+                    </li>
+                    <li class="buttons">
+                        <a class="btn mini blue" href="#">Go</a>
+                    </li>
+                </ul>
             </form>
         </div>
 
@@ -231,16 +247,17 @@
                 </li>
 
                 <!-- medium form items -->
-                <li class="text medium">
-                    <label>Text Medium</label>
+                <li class="text medium error">
+                    <label>Text Medium <em>(With Error Example)</em></label>
                     <input type="text" />
+                    <div class="error"><span>Cannot be empty</span></div>
                 </li>
                 <li class="select medium">
                     <label>Select Medium</label>
                     <select><option>-</option></select>
                 </li>
                 <li class="textarea medium">
-                    <label>Textarea Medium <em>(Default)</em></label>
+                    <label>Textarea Medium w/ TinyMCE <em>(Default)</em></label>
                     <textarea class="tinymce"></textarea>
                 </li>
 
@@ -249,9 +266,10 @@
                     <label>Text Large</label>
                     <input type="text" />
                 </li>
-                <li class="select large">
-                    <label>Select Large</label>
+                <li class="select large error">
+                    <label>Select Large <em>(With Error Example)</em></label>
                     <select><option>-</option></select>
+                    <div class="error"><span>Please choose an option</span></div>
                 </li>
                 <li class="textarea large">
                     <label>Textarea Large</label>
@@ -267,9 +285,10 @@
                     <label>Select Full</label>
                     <select><option>-</option></select>
                 </li>
-                <li class="textarea full">
-                    <label>Textarea Full</label>
+                <li class="textarea full error">
+                    <label>Textarea Full <em>(With Error Example)</em></label>
                     <textarea></textarea>
+                    <div class="error"><span>Cannot be empty</span></div>
                 </li>
                 <li class="checkbox">
                     <label>Checkboxes</label>
@@ -289,6 +308,36 @@
                 </li>
             </ul>
         </form>
+    </div>
+    <div class="clear">&nbsp;</div>
+
+    <div class="grid_12 spacer">
+        <h1>Full-Length Text</h1>
+        <p>Ribeye chicken corned beef, pork belly beef ribs prosciutto sirloin spare ribs tongue turkey strip steak meatball. Kielbasa pork loin sausage, rump jerky pork belly corned beef pig andouille. Sirloin drumstick fatback, chuck boudin salami prosciutto ham jerky pork belly ribeye ball tip. Leberkas boudin meatball sirloin. Tenderloin ribeye beef ball tip tongue sausage.</p>
+
+        <p>Tongue jerky fatback, chuck short loin beef ribs venison. Turducken tri-tip turkey pastrami, tail meatball pig bacon prosciutto ham jerky swine ground round brisket. Beef ham chuck, shoulder turkey turducken drumstick strip steak t-bone pork belly. Leberkas shoulder short ribs andouille spare ribs pig. Beef ribs chicken leberkas turkey ground round.</p>
+
+        <p>Awesome text content thanks to <a href="http://baconipsum.com" target="_blank">Bacon Ipsum</a>.</p>
+    </div>
+    <div class="clear">&nbsp;</div>
+
+    <div class="grid_4 spacer">
+        <h1>Text Column 1</h1>
+        <p>Tongue jerky fatback, chuck short loin beef ribs venison. Turducken tri-tip turkey pastrami, tail meatball pig bacon prosciutto ham jerky swine ground round brisket. Beef ham chuck, shoulder turkey turducken drumstick strip steak t-bone pork belly. Leberkas shoulder short ribs andouille spare ribs pig. Beef ribs chicken leberkas turkey ground round.</p>
+
+        <p>Awesome text content thanks to <a href="http://baconipsum.com" target="_blank">Bacon Ipsum</a>.</p>
+    </div>
+    <div class="grid_4 spacer">
+        <h1>Text Column 2</h1>
+        <p>Tongue jerky fatback, chuck short loin beef ribs venison. Turducken tri-tip turkey pastrami, tail meatball pig bacon prosciutto ham jerky swine ground round brisket. Beef ham chuck, shoulder turkey turducken drumstick strip steak t-bone pork belly. Leberkas shoulder short ribs andouille spare ribs pig. Beef ribs chicken leberkas turkey ground round.</p>
+
+        <p>Awesome text content thanks to <a href="http://baconipsum.com" target="_blank">Bacon Ipsum</a>.</p>
+    </div>
+    <div class="grid_4 spacer">
+        <h1>Text Column 3</h1>
+        <p>Tongue jerky fatback, chuck short loin beef ribs venison. Turducken tri-tip turkey pastrami, tail meatball pig bacon prosciutto ham jerky swine ground round brisket. Beef ham chuck, shoulder turkey turducken drumstick strip steak t-bone pork belly. Leberkas shoulder short ribs andouille spare ribs pig. Beef ribs chicken leberkas turkey ground round.</p>
+
+        <p>Awesome text content thanks to <a href="http://baconipsum.com" target="_blank">Bacon Ipsum</a>.</p>
     </div>
     <div class="clear">&nbsp;</div>
 </div>
