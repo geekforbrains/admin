@@ -134,10 +134,18 @@ a:hover {
     float: right;
 }
 
-ul.menu li {
-    padding: 8px 0 8px 8px;
+ul.menu a {
+    display: block;
+    padding: 8px 0 8px 6px;
     border-bottom: 1px solid #cecece;
 }
+
+ul.menu a:hover,
+ul.menu a.active {
+    background-color: #F6F6F6;
+}
+
+ul.menu ul {margin-left: 20px;}
 
 .sortable .sort_item {
     cursor: move;

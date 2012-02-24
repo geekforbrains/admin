@@ -178,10 +178,24 @@
     <div class="grid_3 spacer">
         <h2>Menu</h2>
         <ul class="menu">
-            <li><a href="#">Item One</a></li>
-            <li><a href="#">Item Two</a></li>
+            <li class="first"><a class="first" href="#">Item One</a></li>
+            <li class="active">
+                <a class="active" href="#">Item Two</a>
+                <ul>
+                    <li class="first active">
+                        <a class="first active" href="#">SubItem One</a>
+                        <ul>
+                            <li class="first"><a class="first" href="#">SubSubItem One</a></li>
+                            <li class="active"><a class="active" href="#">SubSubItem Two</a></li>
+                            <li class="last"><a class="last" href="#">SubSubItem Three</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">SubItem Two</a></li>
+                    <li class="last"><a class="last" href="#">SubItem Three</a></li>
+                </ul>
+            </li>
             <li><a href="#">Item Three</a></li>
-            <li class="noborder"><a href="#">Item Four</a></li>
+            <li class="last"><a class="last" href="#">Item Four</a></li>
         </ul>
     </div>
     <div class="grid_9 spacer">
@@ -197,9 +211,9 @@
                 </li>
                 <li class="select mini">
                     <label>Select Mini</label>
-                    <select class="chzn-select"><option>-</option></select>
-                    <select class="chzn-select"><option>-</option></select>
-                    <select class="chzn-select"><option>-</option></select>
+                    <select><option>-</option></select>
+                    <select><option>-</option></select>
+                    <select><option>-</option></select>
                 </li>
 
                 <!-- small form items -->
@@ -209,7 +223,7 @@
                 </li>
                 <li class="select">
                     <label>Select Small <em>(Default)</em></label>
-                    <select class="chzn-select"><option>-</option></select>
+                    <select><option>-</option></select>
                 </li>
                 <li class="textarea small">
                     <label>Textarea Small</label>
@@ -223,7 +237,7 @@
                 </li>
                 <li class="select medium">
                     <label>Select Medium</label>
-                    <select class="chzn-select"><option>-</option></select>
+                    <select><option>-</option></select>
                 </li>
                 <li class="textarea medium">
                     <label>Textarea Medium <em>(Default)</em></label>
@@ -237,7 +251,7 @@
                 </li>
                 <li class="select large">
                     <label>Select Large</label>
-                    <select class="chzn-select"><option>-</option></select>
+                    <select><option>-</option></select>
                 </li>
                 <li class="textarea large">
                     <label>Textarea Large</label>
@@ -251,7 +265,7 @@
                 </li>
                 <li class="select full">
                     <label>Select Full</label>
-                    <select class="chzn-select"><option>-</option></select>
+                    <select><option>-</option></select>
                 </li>
                 <li class="textarea full">
                     <label>Textarea Full</label>
@@ -292,6 +306,7 @@
 
 
 <script type="text/javascript"> 
+    $('select').addClass('chzn-select');
     $(".chzn-select").chosen(); 
     $(".chzn-select-deselect").chosen({allow_single_deselect:true}); 
 </script>
